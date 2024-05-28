@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+    background-color: #b9b9b9;
+    border: 1px solid #8d8d8d;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .image {
+    background-color: #c5c5c5;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .text-and-buttons {
+    padding: 25px 0;
+  }
+  
+  .pokemon-info {
+    text-align: center;
+  }
+  
+  .abilities {
+    margin-top: 10px;
+  }
+  
+  .pill {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-right: 5px;
+    color: #fff;
+  }
+  
+  .background-color-water {
+    background-color: #00b7ff;
+  }
+  
+  .background-color-poison {
+    background-color: #A040A0;
+  }
+  
+  .background-color-bug {
+    background-color: #00ff22;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .add, .release {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add:hover, .release:hover {
+    background-color: #45a049;
+  }
+  
+  body {
+    background-image: url("arena.png");
+  }
