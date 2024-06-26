@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSA7 Flexbox Simulator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <button id="resetButton">Reset Flexbox</button>
+      <div class="control-group">
+        <label for="gap">Gap:</label>
+        <input type="number" id="gap" value="5">
+        <button id="setGapButton">Set</button>
+      </div>
+      <div class="control-group">
+        <p>Flex Direction:</p>
+        <button id="rowButton">Row</button>
+        <button id="columnButton">Column</button>
+      </div>
+      <div class="control-group">
+        <p>Justify Content:</p>
+        <button id="justifyStartButton">Start</button>
+        <button id="justifyCenterButton">Center</button>
+        <button id="justifyEndButton">End</button>
+      </div>
+      <div class="control-group">
+        <button id="justifySpaceBetweenButton">Space Between</button>
+        <button id="justifySpaceAroundButton">Space Around</button>
+        <button id="justifySpaceEvenlyButton">Space Evenly</button>
+      </div>
+      <div class="control-group">
+        <p>Align Items:</p>
+        <button id="alignStartButton">Start</button>
+        <button id="alignCenterButton">Center</button>
+        <button id="alignEndButton">End</button>
+      </div>
+      <div class="control-group">
+        <p>Flex Grow:</p>
+        <button id="resetGrowButton">Reset</button>
+        <button id="growAllButton">Grow All</button>
+      </div>
+      <div class="control-group">
+        <label for="growInput1">Grow Button 1:</label>
+        <input type="number" id="growInput1" value="1">
+        <button id="growButton1">Set</button>
+      </div>
+      <div class="control-group">
+        <label for="growInput2">Grow Button 2:</label>
+        <input type="number" id="growInput2" value="1">
+        <button id="growButton2">Set</button>
+      </div>
+      <div class="control-group">
+        <label for="growInput3">Grow Button 3:</label>
+        <input type="number" id="growInput3" value="1">
+        <button id="growButton3">Set</button>
+      </div>
+    </div>
+    <div class="flex-container" id="flex-container">
+      <div class="item"> 1</div>
+      <div class="item"> 2</div>
+      <div class="item"> 3</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

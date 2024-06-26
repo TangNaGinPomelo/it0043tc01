@@ -1,210 +1,76 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url(bgbg.jpeg);
-    background-size: cover;
-}
-
-header {
-    background-color: #ff9100;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-
-}
-
-.logo img {
-    height: 50px;
-    margin-left: 20px;
-}
-
-.logo2 img {
- width: 120px;
- padding-left: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: end;
-    flex-grow: 1;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    font-family: "rubik";
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #000000;
-    text-decoration: none;
-    padding: 8px 16px;
-    display: block;
-    font-weight: 700;
-}
-
-nav ul li a.active, nav ul li a:hover {
-    background-color: #F74352;
-    border-radius: 4px;
-}
-
-.header-title {
-    text-align: center;
-    margin: 70px 0 20px;
-    font-size: 3.5em;
-    color: #000000;
-    position: relative;
-    top: 110px; 
-    font-family: "Press Start 2P";
-}
-
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin-top: 140px;
-    color: #000000;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.hero-content {
-    max-width: 50%;
-}
-
-.hero-content h1 {
-    font-size: 2em;
-    font-family: "rubik";
-}
-
-.hero-content p {
-    font-size: 1.2em;
-}
-
-.hero-content .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #000000;
-    text-decoration: none;  
-    border-radius: 4px;
-    margin-top: 10px;
-}
-
-.hero-content .btn:hover {
-    background-color: #575757;
-}
-
-.hero-image img {
-    max-width: 90%;
-    height: auto;
-    padding-top: 70px;
-    padding-left: 60px;
-
-}
-
-.about {
-    padding: 20px;
-    color: #000000;
-    padding-bottom: 100px;
-    font-size: 18px;
-}
-
-footer {
-    text-align: center;
-    font-weight: 700;
-}
-
-@media (max-width: 870px) {
-
-  .hero-content {
-    width: auto;
-}
-.hero-content p {
-  font-size: 1.2em;
-  width: 200%;
-}
-.hero-content h1 {
-  font-size: 2em;
-  font-family: "rubik";
-  width: 200%;
-}
-
-  .hero-image img {
-    max-width: 0%;
-}
-.about{
-text-align: justify;
-}
-}
-
-@media (max-width: 690px) {
-  .hero {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin-top: 140px;
-    color: #000000;
-    font-size: 20px;
-    text-align: justify;
-  }
-  .header-title {
-    text-align: center;
-    margin: 70px 0 20px;
-    font-size: 3.5em;
-    color: #000000;
-    font-family: "Press Start 2P";
-}
-
-  .hero-content {
-    height: 1000px;
-    width: auto;
-}
-.hero-content p {
-  font-size: 1.2em;
-  width: 350%;
-  
-}
-.hero-content h1 {
-  padding-top: 450px;
-  font-size: 2em;
-  font-family: "rubik";
-  width: 300%;
-
-}
-.about{
-text-align: justify;
-padding-top: 200px;
-}
-.hero-image img {
- padding-right: 450px;
- margin-right: 50px;
-  max-width: 0%;
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 20px;
+  display: flex;
   justify-content: center;
-}
-.logo2 img {
-  width: 0px;
-  padding-left: 10px;
- }
+  background-color: #f0f0f0;
+  background-image: url(BG1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
+.container {
+  display: flex;
+  max-width: 800px;
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
+  opacity: 0.7;
+}
+
+.controls {
+  padding-right: 20px;
+}
+
+.controls button,
+.controls input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: pink;
+  color: black;
+}
+
+.controls p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.control-group {
+  margin-bottom: 20px;
+  color: pink;
+  font-weight: bold;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+  border: 5px solid pink;
+  border-radius: 10px;
+  width: 500px;
+
+}
+
+.item {
+  background-color: pink;
+  height: 50px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px;
+  text-align: center;
+  width: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
